@@ -1,0 +1,9 @@
+selenium
+shortuuid
+docker-compose
+docker
+faker
+robotframework
+robotframework-selenium2library
+robotframework-faker
+

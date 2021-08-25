@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.1.2 (Python 3.7.0 on win32)" generated="20210826 04:17:05.243" rpa="false">
+<suite id="s1" name="Challenge Test" source="C:\Users\abhishekb\Workspace\cba-ui-tests-python\tests\challenge_test.robot">
+<kw name="Open" library="MyKeywords" type="setup">
+<arguments>
+<arg>${TEST_URL}</arg>
+</arguments>
+<msg timestamp="20210826 04:17:07.261" level="INFO">Launching url : https://responsivefight.herokuapp.com</msg>
+<status status="PASS" starttime="20210826 04:17:07.256" endtime="20210826 04:17:10.665"></status>
+</kw>
+<test id="s1-t1" name="Create a player and start challenge">
+<kw name="First Name" library="faker">
+<assign>
+<var>${name}</var>
+</assign>
+<msg timestamp="20210826 04:17:10.666" level="INFO">${name} = Lee</msg>
+<status status="PASS" starttime="20210826 04:17:10.665" endtime="20210826 04:17:10.666"></status>
+</kw>
+<kw name="Enter Name And Create Warrior" library="MyKeywords">
+<arguments>
+<arg>${name}</arg>
+</arguments>
+<msg timestamp="20210826 04:17:10.672" level="INFO">Entering username: Lee</msg>
+<msg timestamp="20210826 04:17:11.250" level="INFO">Click create warrior button</msg>
+<status status="PASS" starttime="20210826 04:17:10.666" endtime="20210826 04:17:11.293"></status>
+</kw>
+<kw name="Verify Start Journey Button With Name" library="MyKeywords">
+<arguments>
+<arg>${name}</arg>
+</arguments>
+<msg timestamp="20210826 04:17:11.311" level="INFO">Starting challenge journey with uername Lee seen</msg>
+<status status="PASS" starttime="20210826 04:17:11.294" endtime="20210826 04:17:11.312"></status>
+</kw>
+<kw name="Start Challenge Journey" library="MyKeywords">
+<msg timestamp="20210826 04:17:11.312" level="INFO">Starting challenge journey</msg>
+<status status="PASS" starttime="20210826 04:17:11.312" endtime="20210826 04:17:17.592"></status>
+</kw>
+<kw name="Test Teardown" type="teardown">
+<kw name="Open" library="MyKeywords">
+<arguments>
+<arg>${url}</arg>
+</arguments>
+<msg timestamp="20210826 04:17:17.594" level="INFO">Launching url : https://responsivefight.herokuapp.com</msg>
+<status status="PASS" starttime="20210826 04:17:17.593" endtime="20210826 04:17:18.371"></status>
+</kw>
+<status status="PASS" starttime="20210826 04:17:17.593" endtime="20210826 04:17:18.371"></status>
+</kw>
+<status status="PASS" starttime="20210826 04:17:10.665" endtime="20210826 04:17:18.372" critical="yes"></status>
+</test>
+<test id="s1-t2" name="As a player Complete battlefield Challenge and check leaderboard">
+<kw name="First Name" library="faker">
+<assign>
+<var>${name}</var>
+</assign>
+<msg timestamp="20210826 04:17:18.373" level="INFO">${name} = Joshua</msg>
+<status status="PASS" starttime="20210826 04:17:18.373" endtime="20210826 04:17:18.373"></status>
+</kw>
+<kw name="Enter Name And Create Warrior" library="MyKeywords">
+<arguments>
+<arg>${name}</arg>
+</arguments>
+<msg timestamp="20210826 04:17:18.378" level="INFO">Entering username: Joshua</msg>
+<msg timestamp="20210826 04:17:18.946" level="INFO">Click create warrior button</msg>
+<status status="PASS" starttime="20210826 04:17:18.373" endtime="20210826 04:17:18.983"></status>
+</kw>
+<kw name="Start Challenge Journey" library="MyKeywords">
+<msg timestamp="20210826 04:17:18.983" level="INFO">Starting challenge journey</msg>
+<status status="PASS" starttime="20210826 04:17:18.983" endtime="20210826 04:17:19.675"></status>
+</kw>
+<kw name="Start Battlefield Challenge" library="MyKeywords">
+<msg timestamp="20210826 04:17:19.687" level="INFO">Selecting news challenge</msg>
+<msg timestamp="20210826 04:17:21.947" level="INFO">starting challenge</msg>
+<status status="PASS" starttime="20210826 04:17:19.676" endtime="20210826 04:17:22.001"></status>
+</kw>
+<kw name="Select Answer" library="MyKeywords">
+<arguments>
+<arg>${BattlefieldChallengeAnswer1}</arg>
+</arguments>
+<msg timestamp="20210826 04:17:22.003" level="INFO">Clicking answer: Use your superheroes Mask and sanitizer while traveling on public transport and clean your hands regularly</msg>
+<status status="PASS" starttime="20210826 04:17:22.003" endtime="20210826 04:17:22.327"></status>
+</kw>
+<kw name="Continue On Correct Answer" library="MyKeywords">
+<status status="PASS" starttime="20210826 04:17:22.328" endtime="20210826 04:17:24.078"></status>
+</kw>
+<kw name="Select Answer" library="MyKeywords">
+<arguments>
+<arg>${BattlefieldChallengeAnswer2}</arg>
+</arguments>
+<msg timestamp="20210826 04:17:24.079" level="INFO">Clicking answer: Use your superhero Social Distance and notify your Manager</msg>
+<msg timestamp="20210826 04:17:24.509" level="INFO" html="yes">&lt;a href="reports/screenshots/screenshot_JaET3XGe783ctHoL8XPFAi.png"&gt;&lt;img src="reports/screenshots/screenshot_JaET3XGe783ctHoL8XPFAi.png" width="200px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20210826 04:17:24.079" endtime="20210826 04:17:29.551"></status>
+</kw>
+<kw name="Continue On Correct Answer" library="MyKeywords">
+<status status="PASS" starttime="20210826 04:17:29.551" endtime="20210826 04:17:31.285"></status>
+</kw>
+<kw name="Select Answer" library="MyKeywords">
+<arguments>
+<arg>${BattlefieldChallengeAnswer3}</arg>
+</arguments>
+<msg timestamp="20210826 04:17:31.286" level="INFO">Clicking answer: Use your super hero sanitizer, keep a safe distance and advise they should keep 1.5 metres away from others</msg>
+<msg timestamp="20210826 04:17:31.790" level="INFO" html="yes">&lt;a href="reports/screenshots/screenshot_oFVusjnKNKzoLo2YoGcAsP.png"&gt;&lt;img src="reports/screenshots/screenshot_oFVusjnKNKzoLo2YoGcAsP.png" width="200px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20210826 04:17:31.286" endtime="20210826 04:17:36.830"></status>
+</kw>
+<kw name="Continue On Correct Answer" library="MyKeywords">
+<status status="PASS" starttime="20210826 04:17:36.831" endtime="20210826 04:17:39.012"></status>
+</kw>
+<kw name="Click Continue Fighting On Leaderboard" library="MyKeywords">
+<status status="PASS" starttime="20210826 04:17:39.013" endtime="20210826 04:17:39.743"></status>
+</kw>
+<kw name="Test Teardown" type="teardown">
+<kw name="Open" library="MyKeywords">
+<arguments>
+<arg>${url}</arg>
+</arguments>
+<msg timestamp="20210826 04:17:39.744" level="INFO">Launching url : https://responsivefight.herokuapp.com</msg>
+<status status="PASS" starttime="20210826 04:17:39.744" endtime="20210826 04:17:40.591"></status>
+</kw>
+<status status="PASS" starttime="20210826 04:17:39.743" endtime="20210826 04:17:40.592"></status>
+</kw>
+<status status="PASS" starttime="20210826 04:17:18.372" endtime="20210826 04:17:40.592" critical="yes"></status>
+</test>
+<kw name="Close All" library="MyKeywords" type="teardown">
+<status status="PASS" starttime="20210826 04:17:40.593" endtime="20210826 04:17:42.775"></status>
+</kw>
+<status status="PASS" starttime="20210826 04:17:05.245" endtime="20210826 04:17:42.775"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="2" fail="0">Critical Tests</stat>
+<stat pass="2" fail="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="2" fail="0" id="s1" name="Challenge Test">Challenge Test</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
